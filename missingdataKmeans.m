@@ -48,6 +48,25 @@ K = 3; % Number of clusters
 maxIter = 100; % Maximum iterations
 [clusterIdx, centroids] = KMeans(features_matrix, K, maxIter);
 
+% Dimensionality Reduction using PCA
+[coeff, score, ~, ~, ~] = pca(features_matrix);
+reducedData = score(:, 1:2); % Taking the first two principal components
+
+% Plotting the clusters
+figure;
+gscatter(reducedData(:,1), reducedData(:,2), clusterIdx);
+xlabel('Principal Component 1');
+ylabel('Principal Component 2');
+title('K-means Clustering with PCA Reduction');
+legend(arrayfun(@(x) ['Cluster ' num2str(x)], 1:K, 'UniformOutput', false));
+
+% Optionally, plot centroids
+% Convert centroids to the same PCA-reduced space
+centroidsReduced = centroids * coeff(:,1:2);
+hold on;
+plot(centroidsReduced(:,1), centroidsReduced(:,2), 'kx', 'MarkerSize', 12, 'LineWidth', 2);
+hold off;
+
 % Calculate the silhouette score
 silh_vals = silhouette(features_matrix, clusterIdx);
 avg_silh_score = mean(silh_vals);
