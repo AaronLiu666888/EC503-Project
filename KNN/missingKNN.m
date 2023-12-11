@@ -1,3 +1,5 @@
+% Thie is the fill for actually missing data meaning this fill is not a test but a result
+
 load('WQ_Modified.mat');  % type white = 1 red = 0
 
 % Find missing indexes
