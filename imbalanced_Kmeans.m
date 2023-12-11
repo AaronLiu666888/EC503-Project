@@ -19,21 +19,21 @@ features = balanced_data{:, {'mathScore', 'readingScore', 'writingScore'}};
 % Standardize the features
 features_scaled = zscore(features);
 
-% Apply K-means clustering
-K = 3; % Number of clusters
-maxIter = 100; % Maximum iterations
-[clusterIdx, centroids] = KMeans(features_scaled, K, maxIter);
-
-silhouette(features_scaled, clusterIdx);
-
-% Optionally, to get the average silhouette score
-silh_vals = silhouette(features_scaled, clusterIdx);
-avg_silh_score = mean(silh_vals);
-fprintf('Average Silhouette Score: %f\n', avg_silh_score);
-
 % Applying PCA for visualization
-[coeff, score, ~, ~, explained] = pca(features_scaled);
-reducedData = score(:, 1:2); % Taking first two principal components
+[coeff, score, ~, ~, ~] = pca(features_scaled);
+reducedData = score(:, 1:2);
+
+% Plotting the data before clustering
+figure;
+gscatter(reducedData(:,1), reducedData(:,2));
+xlabel('Principal Component 1');
+ylabel('Principal Component 2');
+title('Data Visualization Before K-means Clustering');
+
+% Apply K-means clustering
+K = 3;
+maxIter = 100; 
+[clusterIdx, centroids] = KMeans(features_scaled, K, maxIter);
 
 % Plotting the clusters
 figure;
@@ -41,17 +41,14 @@ gscatter(reducedData(:,1), reducedData(:,2), clusterIdx);
 xlabel('Principal Component 1');
 ylabel('Principal Component 2');
 title('K-means Clustering with PCA');
-legend('Cluster 1', 'Cluster 2', 'Cluster 3');
 
+% Optionally, to get the average silhouette score
+silh_vals = silhouette(features_scaled, clusterIdx);
+avg_silh_score = mean(silh_vals);
+fprintf('Average Silhouette Score: %f\n', avg_silh_score);
 
 function [clusterIdx, centroids] = KMeans(data, K, maxIter)
-    % CustomKMeans performs K-means clustering on the dataset
-    % Inputs:
-    %   data - A matrix of data points
-    %   K - Number of clusters
-    %   maxIter - Maximum number of iterations
 
-    % Randomly initialize the centroids
     centroids = data(randperm(size(data, 1), K), :);
     oldCentroids = zeros(size(centroids));
     clusterIdx = zeros(size(data, 1), 1);
@@ -73,4 +70,5 @@ function [clusterIdx, centroids] = KMeans(data, K, maxIter)
         iter = iter + 1;
     end
 end
+
 
