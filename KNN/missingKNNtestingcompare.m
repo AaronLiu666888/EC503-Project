@@ -15,7 +15,7 @@ totaldatanum = length(data);
 
 counter = 0;
 
-if abs(imputedX(missingIndices) - actualX(missingIndices)) < 1
+if abs(imputedX(missingIndices) - actualX(missingIndices)) < 0.1
     counter = counter + 1;
 end
 
