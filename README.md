@@ -1,19 +1,30 @@
 Team 2: Some Classical ML Methods for Unbalanced & Missing Data
-	Team Members: Kristie Gong, Aaron Liu, Tanvi Shingade
+
+Team Members: Kristie Gong, Aaron Liu, Tanvi Shingade
 
 Github Link: https://github.com/AaronLiu666888/EC503-Project
 
 Original Data Sources: 
-Missing Datasets:
-Wine Quality (All 3 Algorithms):
-https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation
-Unbalanced Datasets:
-Wine Quality (Cluster Centroid Algorithm):
-https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation
-BMI (K-Nearest Neighbors Algorithm):
-https://www.kaggle.com/datasets/yasserh/bmidataset
-Student Performance (K-Means Algorithm):
-https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation 
+
+	Missing Datasets:
+ 
+		Wine Quality (All 3 Algorithms):
+  
+			https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation
+   
+	Unbalanced Datasets:
+ 
+		Wine Quality (Cluster Centroid Algorithm):
+  
+			https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation
+   
+		BMI (K-Nearest Neighbors Algorithm):
+  
+			https://www.kaggle.com/datasets/yasserh/bmidataset
+   
+		Student Performance (K-Means Algorithm):
+  
+		https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation 
 
 Dataset Cleaning/Processing:
 
