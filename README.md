@@ -144,14 +144,14 @@ Notes to Reproduce Results:
 
 Cluster Centroid
 
-N/A - check the above section for details. 
+	N/A - check the above section for details. 
 
 K-Nearest Neighbors
 
-Missing Data
+	Missing Data
 
-The dataset tends to perform better with sorted .mat files.
+		The dataset tends to perform better with sorted .mat files.
 
 K-Means
 
-N/A - check the above section for details. 
+	N/A - check the above section for details. 
