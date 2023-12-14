@@ -103,7 +103,8 @@ Square root of the average of differences between all fills
 K-Means
 
 missingdata_Kmeans.m:
-	Loading the Dataset
+	
+ 	Loading the Dataset
  
 	Handling Missing Values in Numeric Columns
  
@@ -120,14 +121,23 @@ missingdata_Kmeans.m:
 	Silhouette Score Calculation
  
 imbalanced_Kmeans.m:
+
 	Loading the Dataset
+ 
 	Segregating the Data
+ 
 	Balancing the Dataset
+ 
 	Combining Subsets for a Balanced Dataset
+ 
 	Feature Standardization
+ 
 	Applying PCA and Plotting
+ 
 	K-means Clustering Implementation
+ 
 	Centroid Calculation and Plotting
+ 
 	Silhouette Score for Clustering Evaluation
 
 Notes to Reproduce Results:
