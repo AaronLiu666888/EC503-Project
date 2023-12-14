@@ -101,33 +101,40 @@ Calculates the root square mean error of the fill
 Square root of the average of differences between all fills
 
 K-Means
+
 missingdata_Kmeans.m:
-Loading the Dataset
-Handling Missing Values in Numeric Columns
-Updating the Dataset
-Separating Features and Label
-Categorical to Numerical Conversion (One-Hot Encoding)
-Normalization and PCA
-Applying K-means Clustering
-Silhouette Score Calculation
+	Loading the Dataset
+	Handling Missing Values in Numeric Columns
+	Updating the Dataset
+	Separating Features and Label
+	Categorical to Numerical Conversion (One-Hot Encoding)
+	Normalization and PCA
+	Applying K-means Clustering
+	Silhouette Score Calculation
+ 
 imbalanced_Kmeans.m:
-Loading the Dataset
-Segregating the Data
-Balancing the Dataset
-Combining Subsets for a Balanced Dataset
-Feature Standardization
-Applying PCA and Plotting
-K-means Clustering Implementation
-Centroid Calculation and Plotting
-Silhouette Score for Clustering Evaluation
+	Loading the Dataset
+	Segregating the Data
+	Balancing the Dataset
+	Combining Subsets for a Balanced Dataset
+	Feature Standardization
+	Applying PCA and Plotting
+	K-means Clustering Implementation
+	Centroid Calculation and Plotting
+	Silhouette Score for Clustering Evaluation
 
 Notes to Reproduce Results:
+
 Cluster Centroid
+
 N/A - check the above section for details. 
 
 K-Nearest Neighbors
+
 Missing Data
+
 The dataset tends to perform better with sorted .mat files.
 
 K-Means
+
 N/A - check the above section for details. 
