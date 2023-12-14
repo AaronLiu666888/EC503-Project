@@ -104,12 +104,19 @@ K-Means
 
 missingdata_Kmeans.m:
 	Loading the Dataset
+ 
 	Handling Missing Values in Numeric Columns
+ 
 	Updating the Dataset
+ 
 	Separating Features and Label
+ 
 	Categorical to Numerical Conversion (One-Hot Encoding)
+ 
 	Normalization and PCA
+ 
 	Applying K-means Clustering
+ 
 	Silhouette Score Calculation
  
 imbalanced_Kmeans.m:
