@@ -16,19 +16,31 @@ Student Performance (K-Means Algorithm):
 https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation 
 
 Dataset Cleaning/Processing:
+
 Cluster Centroid
-For both missing and imbalanced datasets, the Wine Quality dataset was used. 
-The number of feature vectors was limited to 2 (K=2), and the entirety of the dataset was loaded into MATLAB. 
-This dataset primarily presented as imbalanced, with the number of data points skewed at a 75:25 ratio between classes. 
-Some data points were missing certain values, which is why no additional missing dataset was used. The classification of data points was determined based on Wine Type (White or Red, where White was the majority and therefore classified as Class 1), and the classes were added as a separate column to the original Excel Spreadsheet to simplify the MATLAB code. 
-This edited Excel Spreadsheet (found in the Cluster Centroid folder on GitHub) was then loaded into MATLAB for the CC algorithm. 
+
+	For both missing and imbalanced datasets, the Wine Quality dataset was used. 
+ 
+	The number of feature vectors was limited to 2 (K=2), and the entirety of the dataset was loaded into MATLAB. 
+ 
+	This dataset primarily presented as imbalanced, with the number of data points skewed at a 75:25 ratio between classes. 
+ 
+	Some data points were missing certain values, which is why no additional missing dataset was used. The classification of data points was determined based on Wine Type (White or Red, where White was the majority and therefore classified as Class 1), and the classes were added as a separate column to the original Excel Spreadsheet to simplify the MATLAB code.
+ 	
+  	This edited Excel Spreadsheet (found in the Cluster Centroid folder on GitHub) was then loaded into MATLAB for the CC algorithm. 
+   
 K-Nearest Neighbors
-Wine Quality Dataset
-This was cleaned/processed by replacing the categorical data with numerical values and turning the .csv file into a .mat file. There is only one feature that is categorical which is “type”. White was set to 1 and Red was set to 0. This is the WQ_Modified.mat.
-For the instance of testing, all missing value rows were removed from the WQ_Modified.mat to produce WQ_Actual.mat. WQ_Test.mat was also created for testing which had random removal of data from WQ_Actual.mat.
-For baseline understanding, WQ_Modified.mat ‘s missing values were filled with the medians of the columns resulting in the MedianFill.mat.
-BMI Dataset
-This dataset did not need any cleaning or processing besides turning the .csv file to a .mat file.
+
+	Wine Quality Dataset
+		This was cleaned/processed by replacing the categorical data with numerical values and turning the .csv file into a .mat file. There is only one feature that is categorical which is “type”. White was set to 1 and Red was set to 0. This is the WQ_Modified.mat.
+  
+		For the instance of testing, all missing value rows were removed from the WQ_Modified.mat to produce WQ_Actual.mat. WQ_Test.mat was also created for testing which had random removal of data from WQ_Actual.mat.
+  
+		For baseline understanding, WQ_Modified.mat ‘s missing values were filled with the medians of the columns resulting in the MedianFill.mat.
+  
+	BMI Dataset
+ 
+		This dataset did not need any cleaning or processing besides turning the .csv file to a .mat file.
 K-Means
 Wine Quality Dataset
 The preprocessing of this dataset is to impute the missing value with the mean of the numeric column
