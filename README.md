@@ -25,7 +25,7 @@ Original Data Sources:
    
 		Student Performance (K-Means Algorithm):
   
-		https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation 
+			https://www.kaggle.com/datasets/ilayaraja07/data-cleaning-feature-imputation 
 
 Dataset Cleaning/Processing:
 
@@ -54,28 +54,48 @@ K-Nearest Neighbors
  
 		This dataset did not need any cleaning or processing besides turning the .csv file to a .mat file.
 K-Means
-Wine Quality Dataset
-The preprocessing of this dataset is to impute the missing value with the mean of the numeric column
-The features (independent variables) and the label (dependent variable, 'quality') are separated.
-Categorical variables are converted into numerical values using one-hot encoding. 
-Numerical features are normalized
-Students Performance Dataset
-It segregates the data into two groups based on the 'testPreparationCourse' column.
-To address imbalance, it randomly selects samples from the larger group to match the size of the smaller group.
-The script extracts numerical features (math, reading, and writing scores) and standardizes them.
+
+	Wine Quality Dataset
+ 
+		The preprocessing of this dataset is to impute the missing value with the mean of the numeric column
+  
+		The features (independent variables) and the label (dependent variable, 'quality') are separated.
+  
+		Categorical variables are converted into numerical values using one-hot encoding. 
+  
+		Numerical features are normalized
+  
+	Students Performance Dataset
+ 
+		It segregates the data into two groups based on the 'testPreparationCourse' column.
+  
+		To address the imbalance, it randomly selects samples from the larger group to match the size of the smaller group.
+  
+		The script extracts numerical features (math, reading, and writing scores) and standardizes them.
 
 Original Supporting Code Used:
+
 Cluster Centroid
-Did not use any major functions that computed components of the CC algorithm.
+
+	Did not use any major functions that computed components of the CC algorithm.
+
 K-Nearest Neighbors
-Some MATLAB functions were used for efficiency of running through data. 
-i.e. fitcknn()
-i.e. knnimpute()
+
+	Some MATLAB functions were used for efficiency of running through data.
+ 
+		i.e. fitcknn()
+  
+		i.e. knnimpute()
+  
 K-Means
-Some MATLAB functions were used for efficiency of running through data. 
-i.e. strcmp()
-i.e. randperm()
-i.e. pca()
+
+	Some MATLAB functions were used for efficiency of running through data. 
+
+		i.e. strcmp()
+ 
+		i.e. randperm()
+ 
+		i.e. pca()
 
 Codes Explanation:
 Cluster Centroid
